@@ -9,7 +9,7 @@ public class Main {
     }
 }
 
-public class Nodo {
+class Nodo {
     private int dato;
     private Nodo sgte;
 
@@ -34,7 +34,7 @@ public class Nodo {
     }
 }
 
-public class LES {
+class LES {
     private Nodo inicio, nuevo, p, q;
 
     public void insertarxInicio (int dato){

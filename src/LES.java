@@ -26,4 +26,18 @@ public class LES {
         }
         return cadena;
     }
+    public void eliminar final() {
+         if(inicio != null){
+             if(inicio.getSgte() == null){
+                inicio = null;
+            }else{
+              p = inicio; q = inicio;
+              while(p.getSgte() != null ){
+                 q=p; p=p.getSgte();
+              }
+              q.getSgte(null);
+             }
+          }
+        }
+    }
 }

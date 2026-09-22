@@ -26,7 +26,7 @@ public class LES {
         }
         return cadena;
     }
-    public void eliminar final() {
+    public void eliminarxFinal() {
          if(inicio != null){
              if(inicio.getSgte() == null){
                 inicio = null;

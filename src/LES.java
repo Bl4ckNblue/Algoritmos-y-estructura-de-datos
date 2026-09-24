@@ -97,10 +97,12 @@ public class LES {
                         q = p;
                         p = p.getSgte();
                     }
-                    if (p.getDato() == posicion)
-                        q.setSgte(p.getSgte());
-
-
+                    if (p.getDato() == posicion) {
+                        if (p == inicio)
+                            inicio = inicio.getSgte();
+                        else
+                            q.setSgte(p.getSgte());
+                    }
                 }
             }
         }
